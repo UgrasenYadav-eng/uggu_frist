@@ -8,7 +8,7 @@ function App() {
   <>
         <Navbar/>
         <div className='container'>
-          <Textarea heading="Enter here your text" />
+          <Textarea heading="Case Converter" />
         </div>
 
   </>
