@@ -10,6 +10,7 @@ export default function Textarea(props) {
 
     const handleOnChange=()=> {
         console.log ("onChange");
+        setText(event.target.value)
        
     }
 
