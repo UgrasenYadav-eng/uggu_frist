@@ -58,6 +58,11 @@ export default function Textarea(props) {
         console.log ("Copy was clicked + text");
         navigator.clipboard.writeText(text);        
     }
+    //Paste
+    const handlePasteClick=()=> {
+        console.log ("Paste was clicked + text");
+        navigator.clipboard.writeText(text);        
+    }
 
     const handleOnChange=(event)=> {
         //console.log ("onChange");
@@ -83,19 +88,22 @@ export default function Textarea(props) {
                     <div>
                             <button className='btn btn-primary mx-2 my-2' onClick={handleSentenceClick} > Sentance Case </button>
 
-                            <button className='btn btn-primary mx-3' onClick={handleUpClick} my-2> Upper case </button>
+                            <button className='btn btn-primary mx-2' onClick={handleUpClick} my-2> Upper case </button>
                     
-                            <button className='btn btn-primary mx-3' onClick={handleloClick}> Lower case </button>
+                            <button className='btn btn-primary mx-2' onClick={handleloClick}> Lower case </button>
 
-                            <button className='btn btn-primary mx-3' onClick={handleCapitalizeClick}> Capitalized case </button>
+                            <button className='btn btn-primary mx-2' onClick={handleCapitalizeClick}> Capitalized case </button>
                     
-                            <button className='btn btn-primary mx-3' onClick={handleAlternatingClick}> aLtErNaTiNg case </button>
+                            <button className='btn btn-primary mx-2' onClick={handleAlternatingClick}> aLtErNaTiNg case </button>
 
-                            <button className='btn btn-primary mx-3' onClick={handleInversrClick}> Inverse case </button>
+                            <button className='btn btn-primary mx-2' onClick={handleInversrClick}> Inverse case </button>
                     
-                            <button className='btn btn-primary mx-3' onClick={handleclearClick}> Clear </button>
+                            <button className='btn btn-primary mx-2' onClick={handleclearClick}> Clear </button>
                             
-                            <button className='btn btn-primary mx-3' onClick={handlecopyClick}> Copy </button>
+                            <button className='btn btn-primary mx-2' onClick={handlecopyClick}> Copy </button>
+
+                            <button className='btn btn-primary mx-2' onClick={handlePasteClick}> Paste </button>
+                        
                     </div>
                     <p></p><p></p>
         <div className='container My-5'>
