@@ -41,6 +41,7 @@ export default function Textarea(props) {
         }).join('');
         setText(newtext);
     };
+    //ok
 
     const handleCapitalizeClick = () => {
         console.log("Capitalize Case was clicked + text");
